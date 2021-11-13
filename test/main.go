@@ -28,7 +28,7 @@ func main() {
 	for i := 0; i < concurrentRequests; i++ {
 		go func(count int) {
 			now := time.Now()
-			resp, err := http.Get(fmt.Sprintf("http://%s/api/root-service", "192.168.61.110"))
+			resp, err := http.Get(fmt.Sprintf("http://%s/api/root-service", "172.31.236.187"))
 			if err != nil {
 				errCount++
 				fmt.Printf("request %d failed to load response: %v \n", count, err)
