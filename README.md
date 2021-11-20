@@ -1,2 +1,6 @@
 # k8s-lab-1-2
-k8s
+
+Дозволити ingress
+```
+minikube addons enable ingress
+```
